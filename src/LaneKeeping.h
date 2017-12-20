@@ -2,10 +2,10 @@
 
 #include "VehicleState.h"
 
-class LineKeeping : public VehicleState
+class LaneKeeping : public VehicleState
 {
 public:
-	LineKeeping() {}
+	LaneKeeping() {}
 
 	virtual std::tuple<VehicleState*, TrajectoryPtr> OptimalTrajectory(
 		const Eigen::VectorXd& currStateX6, double currTime, const SensorFusion& sensFusion) override;

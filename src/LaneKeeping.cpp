@@ -11,7 +11,7 @@ using Eigen::VectorXd;
 using Eigen::MatrixXd;
 
 
-std::tuple<VehicleState*, TrajectoryPtr> LineKeeping::OptimalTrajectory( const Eigen::VectorXd& currStateX6,
+std::tuple<VehicleState*, TrajectoryPtr> LaneKeeping::OptimalTrajectory( const Eigen::VectorXd& currStateX6,
 																		double currTime,
 																		const SensorFusion& rSF )
 {

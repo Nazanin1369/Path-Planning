@@ -13,7 +13,7 @@ using namespace std;
 PathPlanner::PathPlanner()
 {
 	m_states.reserve(2);
-	m_states.push_back(unique_ptr<LineKeeping>(new LineKeeping));
+	m_states.push_back(unique_ptr<LaneKeeping>(new LaneKeeping));
 }
 
 TrajectoryPtr PathPlanner::OptimalTrajectory (const VectorXd& currStateX6, double currTime, const SensorFusion& sensorFusion)
